@@ -17,11 +17,11 @@ import numpy as np
 
 warnings.filterwarnings("ignore")
 HERE = Path(__file__).resolve().parent
-REPO = Path("/Users/jurimoon/PROJECTS/EC-Challenge")
+REPO = HERE.parent
 AC = HERE.parent / "_actual check"
 # HERE must stay first: experiments/_common also has a metrics.py
 sys.path.append(str(AC))
-sys.path.append(str(HERE.parent / "_DEKS-EYEBANK/_code"))
+sys.path.append(str(HERE.parent / "SAMPLE - DEKS-EYEBANK" / "_code"))
 sys.path.append(str(REPO / "experiments/_common"))
 sys.path.insert(0, str(HERE))
 from metrics import analyse                                  # noqa: E402
@@ -58,7 +58,7 @@ def rows_deks():
 def main() -> None:
     (HERE / "result").mkdir(exist_ok=True)
     out = []
-    for gen in (rows_exports, rows_deks, rows_clear):
+    for gen in (rows_exports, rows_deks):
         for src, name, pts, um, gt in gen():
             r = analyse(pts, um)
             out.append(dict(source=src, frame=name, n_markers=len(pts),

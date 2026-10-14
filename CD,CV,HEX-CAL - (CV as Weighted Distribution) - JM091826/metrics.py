@@ -40,7 +40,7 @@ from pathlib import Path
 import numpy as np
 from scipy.spatial import ConvexHull, cKDTree
 
-_REPO = Path("/Users/jurimoon/PROJECTS/EC-Challenge")
+_REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_REPO / "clean3_ECD DEFINITION (Voronoi cell inside hull)"))
 from ecd import cells, interior_mask, poly_area            # noqa: E402
 from ecd.voronoi_cells import BOX, KNN, ccw, clip_halfplane, disc   # noqa: E402
