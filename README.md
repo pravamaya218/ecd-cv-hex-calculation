@@ -161,6 +161,15 @@ with R² 0.47, and hexagons sitting at weight +0.007.
 - Two fields with matching counts (2.3 and 7.3) do not line up cell by cell with
   the A file.
 
+
+## Main code and testing 
+
+Use:  uv run score_deks.py
+testing : plot_field.ipynb
+
+
+
+
 Reference for the cell model (Voronoi from marked centres, shoelace areas, cells
 with incomplete outer rings excluded, ECD = inner cells / their total area): Li,
 D., Li, Z., Duan, H. et al., *npj Digital Medicine* 8, 791 (2025),
