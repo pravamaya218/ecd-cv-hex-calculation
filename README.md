@@ -18,7 +18,7 @@ python score_deks.py "SAMPLE - DEKS-EYEBANK/Reader1" --sweep    # also sweep the
 
 |  | CD | CV | HEX | fields |
 | --- | ---: | ---: | ---: | ---: |
-| CellChek D exports (original README, not re-run here) | 0.2% | 6.1% | 3.7% | 2 |
+| CellChek D exports  | 0.2% | 6.1% | 3.7% | 2 |
 | DEKS Reader1, original settings (scale 0.7716, extra filter on) | 1.0% | 5.4% | 4.0% | 37 |
 | DEKS Reader1, current settings, global weights | **0.3%** | 5.5% | **3.9%** | 37 |
 | DEKS Reader1, current settings, local weights | **0.3%** | **4.9%** | **3.9%** | 37 |
