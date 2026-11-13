@@ -16,7 +16,7 @@ from pathlib import Path
 import numpy as np
 from scipy.spatial import Delaunay
 
-import new.score_deks as sd
+import score_deks as sd
 
 UM = 0.768
 root = Path(sys.argv[1] if len(sys.argv) > 1 else "SAMPLE - DEKS-EYEBANK/Reader1")
