@@ -165,3 +165,15 @@ Reference for the cell model (Voronoi from marked centres, shoelace areas, cells
 with incomplete outer rings excluded, ECD = inner cells / their total area): Li,
 D., Li, Z., Duan, H. et al., *npj Digital Medicine* 8, 791 (2025),
 https://doi.org/10.1038/s41746-025-02239-0. It does not describe a CV weighting.
+
+
+*******************************************************************************
+
+For Center Method:
+
+Please run patent_model.py then run patent_check.py to verify how the center model is working
+
+frame_metrics.ipynb notebook to test the performance in %bias and %MAPE for center method
+
+*********************************************************************************
+
